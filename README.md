@@ -78,25 +78,31 @@ Este projeto implementa regras de detecção diretamente no **plano de dados** u
 
 ## Instalação das Dependências
 
-### Fedora
+## Fedora
 
+
+### Atualizar sistema
 ```bash
-# Atualizar sistema
 sudo dnf update -y
-
-# Instalar dependências básicas
+```
+### Instalar dependências básicas
+```
 sudo dnf install -y git make automake gcc gcc-c++ boost-devel \
     libpcap-devel libtool python3-devel python3-pip
-
-# Instalar Python e Scapy
+```
+### Instalar Python e Scapy
+```
 sudo dnf install -y python3-scapy
-
-# Instalar pip e dependências Python
+```
+### Instalar pip e dependências Python
+```
 python3 -m pip install --user scapy numpy pandas
+```
 
-# ============================================
+
 # Instalar P4 Compiler (p4c)
-# ============================================
+
+```
 cd ~
 git clone https://github.com/p4lang/p4c.git
 cd p4c
@@ -104,10 +110,11 @@ mkdir build && cd build
 cmake ..
 make -j$(nproc)
 sudo make install
+```
 
-# ============================================
 # Instalar Behavioral Model (BMv2)
-# ============================================
+
+```
 cd ~
 git clone https://github.com/p4lang/behavioral-model.git
 cd behavioral-model
@@ -115,10 +122,11 @@ cd behavioral-model
 ./configure
 make -j$(nproc)
 sudo make install
+```
 
-# ============================================
 # Instalar PI (P4Runtime)
-# ============================================
+
+```
 cd ~
 git clone https://github.com/p4lang/PI.git
 cd PI
@@ -128,27 +136,34 @@ make -j$(nproc)
 sudo make install
 sudo ldconfig
 ```
+---
+
 ---
 
 ## Ubuntu (24.04 ou superior)
 
-```bash
-# Atualizar sistema
+### Atualizar sistema
+```
 sudo apt update && sudo apt upgrade -y
+```
 
-# Instalar dependências básicas
+### Instalar dependências básicas
+```
 sudo apt install -y git make automake gcc g++ libboost-dev \
     libpcap-dev libtool python3-dev python3-pip
-
-# Instalar Python e Scapy
+```
+### Instalar Python e Scapy
+```
 sudo apt install -y python3-scapy
+```
 
-# Instalar pip e dependências
+### Instalar pip e dependências
+```
 python3 -m pip install --user scapy numpy pandas
+```
 
-# ============================================
-# Instalar P4 Compiler (p4c)
-# ============================================
+### Instalar P4 Compiler (p4c)
+```
 cd ~
 git clone https://github.com/p4lang/p4c.git
 cd p4c
@@ -156,10 +171,11 @@ mkdir build && cd build
 cmake ..
 make -j$(nproc)
 sudo make install
+```
 
-# ============================================
-# Instalar Behavioral Model (BMv2)
-# ============================================
+
+### Instalar Behavioral Model (BMv2)
+```
 cd ~
 git clone https://github.com/p4lang/behavioral-model.git
 cd behavioral-model
@@ -167,10 +183,11 @@ cd behavioral-model
 ./configure
 make -j$(nproc)
 sudo make install
+```
 
-# ============================================
-# Instalar PI (P4Runtime)
-# ============================================
+
+### Instalar PI (P4Runtime)
+```
 cd ~
 git clone https://github.com/p4lang/PI.git
 cd PI
@@ -180,11 +197,9 @@ make -j$(nproc)
 sudo make install
 sudo ldconfig
 ```
+Observação: Tempo de instalação: O processo completo leva de 20 a 40 minutos dependendo da máquina.
 ---
 
-⚠️ Tempo de instalação: O processo completo leva de 20 a 40 minutos dependendo da máquina.
-
----
 ## Configuração do Ambiente
 
 ```bash

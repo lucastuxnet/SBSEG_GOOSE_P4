@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><title>Relatório GOOSE IDS</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+.pass { color: green; }
+.block { color: red; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #4CAF50; color: white; }
+tr:nth-child(even) { background-color: #f2f2f2; }
+.info { background-color: #e7f3fe; padding: 10px; margin: 10px 0; }
+</style>
+</head>
+<body>
+<h1>Relatório de Testes - GOOSE IDS P4</h1>
+<div class="info">
+<p><strong>Data:</strong> 2026-05-15 18:37:52.884364</p>
+<p><strong>Interface:</strong> veth1</p>
+<p><strong>Arquivo JSON:</strong> goose_ids.json</p>
+<p><strong>Pacotes enviados:</strong> 34</p>
+</div>
+
+<h2>Resultados dos Testes:</h2>
+<td>
+<tr><th>ID</th><th>Teste</th><th>Regra</th><th>Resultado</th></tr>
+<tr><td>1</td><td>Grayhole: SqNum<5 + tDiff>1500ms</td><td>grayhole_sqnum_tdiff</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>2</td><td>Grayhole: SqNum<5 + StNum<30</td><td>grayhole_sqnum_stnum</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>3</td><td>Grayhole: SqNum<5 + stDiff>500</td><td>grayhole_sqnum_stdiff</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>4</td><td>Grayhole: Persistente (SqNum<=4)</td><td>grayhole_persistent</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>5</td><td>High StNum: StNum>2000 + stDiff>1000</td><td>high_StNum_state</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>6</td><td>High StNum: Seq+Time</td><td>high_StNum_seq_time</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>7</td><td>Injection: SeqNum alto + salto</td><td>injection_seq</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>8</td><td>Injection: Estado anormal</td><td>injection_state</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>9</td><td>Inverse Replay: Atraso temporal</td><td>inverse_replay_time</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>10</td><td>Inverse Replay: Salto de estado</td><td>inverse_replay_jump</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>11</td><td>Masquerade Fake Fault: tDiff + tsDiff</td><td>fake_fault_tdiff_ts</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>12</td><td>Masquerade Fake Fault: tDiff + stDiff</td><td>fake_fault_tdiff_stdiff</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>13</td><td>Masquerade Fake Fault: SqNum baixo + tsDiff</td><td>fake_fault_sqnum_ts</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>14</td><td>Masquerade Fake Fault: StNum baixo + cbStatus</td><td>fake_fault_lowstnum</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>15</td><td>Masquerade Fake Normal: StNum>800 + stDiff>500</td><td>fake_normal_stdiff</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>16</td><td>Masquerade Fake Normal: StNum>800 + tsDiff>400ms</td><td>fake_normal_timestamp</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>17</td><td>Poisoned High Rate: Estado prolongado</td><td>poisoned_state</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>18</td><td>Poisoned High Rate: Timing anômalo</td><td>poisoned_timing</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>19</td><td>Random Replay: SqNum>55 + StNum<100</td><td>random_sqnum_stnum</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>20</td><td>Random Replay: Salto seq + diff negativo</td><td>random_sqdiff_stdiff</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+<tr><td>21</td><td>Random Replay: Timestamp + timeChange</td><td>random_timestamp</td><td class='block'>⚠️ BLOQUEADO</td></tr>
+</table></body></html>

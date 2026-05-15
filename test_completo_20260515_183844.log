@@ -1,0 +1,158 @@
+TESTE GOOSE IDS - 2026-05-15 18:38:44.274861
+============================================================
+Interface: veth1
+Arquivo JSON: goose_convert.json
+============================================================
+
+Started session-c13.scope - Session c13 of User root.
+pam_systemd(sudo:session): Failed to check if /run/user/0/bus exists, ignoring: Permissão negada
+pam_unix(sudo:session): session opened for user root(uid=0) by lucas(uid=1000)
+AUDIT1105 pid=13642 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=stuxnet addr=? terminal=/dev/pts/3 res=success'
+AUDIT1101 pid=13647 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:accounting grantors=pam_unix acct="root" exe="/usr/bin/sudo" hostname=stuxnet addr=? terminal=/dev/pts/4 res=success'
+    root : TTY=pts/4 ; PWD=/home/lucas/Documentos/Mestrado/SBSEC_GOOSE_P4 ; USER=root ; COMMAND=/usr/sbin/journalctl -f --output=cat
+AUDIT1123 pid=13647 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='cwd="/home/lucas/Documentos/Mestrado/SBSEC_GOOSE_P4" cmd=6A6F75726E616C63746C202D66202D2D6F75747075743D636174 exe="/usr/bin/sudo" terminal=pts/4 res=success'
+AUDIT1110 pid=13647 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_env,pam_fprintd acct="root" exe="/usr/bin/sudo" hostname=stuxnet addr=? terminal=/dev/pts/4 res=success'
+pam_unix(sudo:session): session opened for user root(uid=0) by lucas(uid=0)
+AUDIT1105 pid=13647 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=stuxnet addr=? terminal=/dev/pts/4 res=success'
+Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'org.kde.baloo'")
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+bluetooth.service - Bluetooth service skipped, unmet condition check ConditionPathIsDirectory=/sys/class/bluetooth
+Cannot find Bluez 5 adapter for device search false
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=0 old_prom=256 auid=1000 uid=0 gid=0 ses=3
+veth1: left promiscuous mode
+ANOM_PROMISCUOUS dev=veth1 prom=256 old_prom=0 auid=1000 uid=0 gid=0 ses=3
+veth1: entered promiscuous mode
+
+============================================================
+RESUMO DO TESTE
+============================================================
+Arquivo JSON: goose_convert.json
+Interface: veth1
+Pacotes enviados: 34
+Drops detectados: 0
+Duração: 7.0s

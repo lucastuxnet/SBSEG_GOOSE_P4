@@ -1,0 +1,26 @@
+# ============================================================
+# GOOSE IDS P4 - Dependências Python
+# https://github.com/lucastuxnet/SBSEC_GOOSE_P4
+# ============================================================
+
+# Construção e envio de pacotes de rede personalizados
+# Usado em: testar_ataques_log.py (Ether, Raw, sendp)
+scapy>=2.5.0
+
+# ============================================================
+# Dependências da stdlib (não precisam ser instaladas)
+# Listadas apenas como referência de uso interno:
+#
+#   subprocess  — controle do simple_switch e journalctl
+#   time        — delays entre pacotes
+#   os          — manipulação de diretórios (logs/)
+#   datetime    — timestamps nos relatórios
+#   json        — geração de relatórios JSON
+#   sys         — parsing de argumentos CLI
+#   struct      — empacotamento binário dos frames GOOSE
+#   re          — expressões regulares (convert_p4.py)
+#   ast         — parse de arquivos Python de regras
+#   typing      — anotações de tipo (convert_p4.py)
+#   pathlib     — manipulação de caminhos (convert_p4.py)
+#   argparse    — CLI do convert_p4.py
+# ============================================================

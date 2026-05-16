@@ -1,0 +1,286 @@
+{
+  "teste": {
+    "inicio": "2026-05-15T18:14:52.014935",
+    "fim": "2026-05-15T18:14:58.939879",
+    "pacotes_enviados": 34,
+    "resultados": [
+      {
+        "id": 1,
+        "name": "Grayhole: SqNum<5 + tDiff>1500ms",
+        "rule": "grayhole_sqnum_tdiff",
+        "expected_block": true,
+        "packet": {
+          "stnum": 50,
+          "sqnum": 2,
+          "tdiff_ms": 2000,
+          "status": 0,
+          "packet_num": 1
+        }
+      },
+      {
+        "id": 2,
+        "name": "Grayhole: SqNum<5 + StNum<30",
+        "rule": "grayhole_sqnum_stnum",
+        "expected_block": true,
+        "packet": {
+          "stnum": 20,
+          "sqnum": 3,
+          "tdiff_ms": 0,
+          "status": 0,
+          "packet_num": 2
+        }
+      },
+      {
+        "id": 3,
+        "name": "Grayhole: SqNum<5 + stDiff>500",
+        "rule": "grayhole_sqnum_stdiff",
+        "expected_block": true,
+        "packet": {
+          "stnum": 650,
+          "sqnum": 2,
+          "tdiff_ms": 0,
+          "status": 0,
+          "packet_num": 4
+        }
+      },
+      {
+        "id": 4,
+        "name": "Grayhole: Persistente (SqNum<=4)",
+        "rule": "grayhole_persistent",
+        "expected_block": true,
+        "packet": {
+          "stnum": 100,
+          "sqnum": 4,
+          "tdiff_ms": 100,
+          "status": 0,
+          "packet_num": 6
+        }
+      },
+      {
+        "id": 5,
+        "name": "High StNum: StNum>2000 + stDiff>1000",
+        "rule": "high_StNum_state",
+        "expected_block": true,
+        "packet": {
+          "stnum": 2500,
+          "sqnum": 11,
+          "tdiff_ms": 0,
+          "status": 0,
+          "packet_num": 8
+        }
+      },
+      {
+        "id": 6,
+        "name": "High StNum: Seq+Time",
+        "rule": "high_StNum_seq_time",
+        "expected_block": true,
+        "packet": {
+          "stnum": 200,
+          "sqnum": 120,
+          "tdiff_ms": 3500,
+          "status": 0,
+          "packet_num": 10
+        }
+      },
+      {
+        "id": 7,
+        "name": "Injection: SeqNum alto + salto",
+        "rule": "injection_seq",
+        "expected_block": true,
+        "packet": {
+          "stnum": 10,
+          "sqnum": 170,
+          "tdiff_ms": 0,
+          "status": 0,
+          "packet_num": 12
+        }
+      },
+      {
+        "id": 8,
+        "name": "Injection: Estado anormal",
+        "rule": "injection_state",
+        "expected_block": true,
+        "packet": {
+          "stnum": 10,
+          "sqnum": 11,
+          "tdiff_ms": 0,
+          "status": 2,
+          "packet_num": 14
+        }
+      },
+      {
+        "id": 9,
+        "name": "Inverse Replay: Atraso temporal",
+        "rule": "inverse_replay_time",
+        "expected_block": true,
+        "packet": {
+          "stnum": 101,
+          "sqnum": 11,
+          "tdiff_ms": 3000,
+          "status": 0,
+          "packet_num": 16
+        }
+      },
+      {
+        "id": 10,
+        "name": "Inverse Replay: Salto de estado",
+        "rule": "inverse_replay_jump",
+        "expected_block": true,
+        "packet": {
+          "stnum": 20,
+          "sqnum": 11,
+          "tdiff_ms": 0,
+          "status": 0,
+          "packet_num": 18
+        }
+      },
+      {
+        "id": 11,
+        "name": "Masquerade Fake Fault: tDiff + tsDiff",
+        "rule": "fake_fault_tdiff_ts",
+        "expected_block": true,
+        "packet": {
+          "stnum": 100,
+          "sqnum": 10,
+          "tdiff_ms": 1500,
+          "status": 0,
+          "packet_num": 19
+        }
+      },
+      {
+        "id": 12,
+        "name": "Masquerade Fake Fault: tDiff + stDiff",
+        "rule": "fake_fault_tdiff_stdiff",
+        "expected_block": true,
+        "packet": {
+          "stnum": 450,
+          "sqnum": 11,
+          "tdiff_ms": 1500,
+          "status": 0,
+          "packet_num": 21
+        }
+      },
+      {
+        "id": 13,
+        "name": "Masquerade Fake Fault: SqNum baixo + tsDiff",
+        "rule": "fake_fault_sqnum_ts",
+        "expected_block": true,
+        "packet": {
+          "stnum": 100,
+          "sqnum": 5,
+          "tdiff_ms": 500,
+          "status": 0,
+          "packet_num": 22
+        }
+      },
+      {
+        "id": 14,
+        "name": "Masquerade Fake Fault: StNum baixo + cbStatus",
+        "rule": "fake_fault_lowstnum",
+        "expected_block": true,
+        "packet": {
+          "stnum": 150,
+          "sqnum": 10,
+          "tdiff_ms": 0,
+          "status": 1,
+          "packet_num": 23
+        }
+      },
+      {
+        "id": 15,
+        "name": "Masquerade Fake Normal: StNum>800 + stDiff>500",
+        "rule": "fake_normal_stdiff",
+        "expected_block": true,
+        "packet": {
+          "stnum": 1000,
+          "sqnum": 11,
+          "tdiff_ms": 0,
+          "status": 0,
+          "packet_num": 25
+        }
+      },
+      {
+        "id": 16,
+        "name": "Masquerade Fake Normal: StNum>800 + tsDiff>400ms",
+        "rule": "fake_normal_timestamp",
+        "expected_block": true,
+        "packet": {
+          "stnum": 900,
+          "sqnum": 10,
+          "tdiff_ms": 600,
+          "status": 0,
+          "packet_num": 26
+        }
+      },
+      {
+        "id": 17,
+        "name": "Poisoned High Rate: Estado prolongado",
+        "rule": "poisoned_state",
+        "expected_block": true,
+        "packet": {
+          "stnum": 700,
+          "sqnum": 10,
+          "tdiff_ms": 0,
+          "status": 0,
+          "packet_num": 27
+        }
+      },
+      {
+        "id": 18,
+        "name": "Poisoned High Rate: Timing an\u00f4malo",
+        "rule": "poisoned_timing",
+        "expected_block": true,
+        "packet": {
+          "stnum": 100,
+          "sqnum": 10,
+          "tdiff_ms": -200,
+          "status": 0,
+          "packet_num": 28
+        }
+      },
+      {
+        "id": 19,
+        "name": "Random Replay: SqNum>55 + StNum<100",
+        "rule": "random_sqnum_stnum",
+        "expected_block": true,
+        "packet": {
+          "stnum": 80,
+          "sqnum": 60,
+          "tdiff_ms": 0,
+          "status": 0,
+          "packet_num": 29
+        }
+      },
+      {
+        "id": 20,
+        "name": "Random Replay: Salto seq + diff negativo",
+        "rule": "random_sqdiff_stdiff",
+        "expected_block": true,
+        "packet": {
+          "stnum": 10,
+          "sqnum": 100,
+          "tdiff_ms": 0,
+          "status": 0,
+          "packet_num": 31
+        }
+      },
+      {
+        "id": 21,
+        "name": "Random Replay: Timestamp + timeChange",
+        "rule": "random_timestamp",
+        "expected_block": true,
+        "packet": {
+          "stnum": 101,
+          "sqnum": 11,
+          "tdiff_ms": 600,
+          "status": 0,
+          "packet_num": 33
+        }
+      }
+    ]
+  },
+  "configuracao": {
+    "interface": "veth1",
+    "log_file": "logs/test_completo_20260515_181452.log"
+  }
+}

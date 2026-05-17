@@ -11,7 +11,7 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ### Adicionado
 - Suporte ao conversor de regras `convert_p4.py`: pipeline completo de `rules.py` → P4 → JSON
-- Integração com a ferramenta [SBRC 2026](https://github.com/lucastuxnet/SBRC_2026) para geração de regras em alto nível
+- Integração com a ferramenta [SBSEG 2026](https://github.com/lucastuxnet/SBSEG_2026) para geração de regras em alto nível
 - Geração automática de relatórios em HTML e JSON após execução dos testes
 - Diretório `logs/` com saída estruturada por timestamp (`.log`, `.json`, `.html`)
 - Suporte ao arquivo `goose_convert.json` como backend alternativo ao `goose_ids.json`

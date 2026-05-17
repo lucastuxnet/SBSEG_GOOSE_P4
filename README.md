@@ -2,7 +2,7 @@
 
 > Sistema de Detecção de Intrusão (IDS) baseado em P4 para redes elétricas inteligentes, com suporte à detecção de ataques ao protocolo GOOSE (IEC 61850).
 
-[![GitHub](https://img.shields.io/badge/GitHub-SBSEC__GOOSE__P4-blue?logo=github)](https://github.com/lucastuxnet/SBSEC_GOOSE_P4)
+[![GitHub](https://img.shields.io/badge/GitHub-SBSEG__GOOSE__P4-blue?logo=github)](https://github.com/lucastuxnet/SBSEG_GOOSE_P4)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-yellow?logo=python)](https://python.org)
 [![P4](https://img.shields.io/badge/P4-p4--16-green)](https://p4.org)
 [![Version](https://img.shields.io/badge/versão-1.1.0-orange)](CHANGELOG.md)
@@ -156,8 +156,8 @@ sudo ldconfig
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/lucastuxnet/SBSEC_GOOSE_P4.git
-cd SBSEC_GOOSE_P4
+git clone https://github.com/lucastuxnet/SBSEG_GOOSE_P4.git
+cd SBSEG_GOOSE_P4
 ```
 
 ### 2. Criar e Ativar o Ambiente Virtual
@@ -201,7 +201,7 @@ sudo simple_switch \
 
 ## 🔁 Utilizando o Conversor de Regras (rules.py)
 
-> ⚠️ O arquivo `rules.py` foi gerado utilizando a ferramenta desenvolvida no trabalho [**SBRC 2026**](https://github.com/lucastuxnet/SBRC_2026). Essa ferramenta permite definir regras de detecção em alto nível que são automaticamente convertidas para código P4 compatível com o BMv2.
+> ⚠️ O arquivo `rules.py` foi gerado utilizando a ferramenta desenvolvida no trabalho [**SBRC 2026**](https://github.com/lucastuxnet/SBSEG_2026). Essa ferramenta permite definir regras de detecção em alto nível que são automaticamente convertidas para código P4 compatível com o BMv2.
 
 ### Passo 1: Ativar o Ambiente Virtual
 
@@ -232,7 +232,7 @@ sudo python testar_ataques_log.py goose_convert.json
 ## 📁 Estrutura do Projeto
 
 ```
-SBSEC_GOOSE_P4/
+SBSEG_GOOSE_P4/
 ├── goose_ids_complete.p4     # Programa P4 principal
 ├── goose_detection.json      # Bytecode BMv2 gerado
 ├── rules.py                  # Regras de detecção (geradas via SBRC 2026)
@@ -262,8 +262,8 @@ Veja o arquivo [CHANGELOG.md](CHANGELOG.md) para o histórico completo de versõ
 
 ## 🔗 Referências
 
-- 📦 **Este projeto:** [SBSEC_GOOSE_P4](https://github.com/lucastuxnet/SBSEC_GOOSE_P4)
-- 🛠️ **Ferramenta de criação de regras:** [SBRC_2026](https://github.com/lucastuxnet/SBRC_2026)
+- 📦 **Este projeto:** [SBSEC_GOOSE_P4](https://github.com/lucastuxnet/SBSEG_GOOSE_P4)
+- 🛠️ **Ferramenta de criação de regras:** [SBRC_2026](https://github.com/lucastuxnet/SBRG_2026)
 - 📖 **p4lang/p4c:** https://github.com/p4lang/p4c
 - 📖 **p4lang/behavioral-model:** https://github.com/p4lang/behavioral-model
 - 📖 **p4lang/PI:** https://github.com/p4lang/PI

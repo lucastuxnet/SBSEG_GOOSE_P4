@@ -262,8 +262,8 @@ Veja o arquivo [CHANGELOG.md](CHANGELOG.md) para o histórico completo de versõ
 
 ## 🔗 Referências
 
-- 📦 **Este projeto:** [SBSEC_GOOSE_P4](https://github.com/lucastuxnet/SBSEG_GOOSE_P4)
-- 🛠️ **Ferramenta de criação de regras:** [SBRC_2026](https://github.com/lucastuxnet/SBRG_2026)
+- 📦 **Este projeto:** [SBSEG_GOOSE_P4](https://github.com/lucastuxnet/SBSEG_GOOSE_P4)
+- 🛠️ **Ferramenta de criação de regras:** [SBSEG_2026](https://github.com/lucastuxnet/SBRG_2026)
 - 📖 **p4lang/p4c:** https://github.com/p4lang/p4c
 - 📖 **p4lang/behavioral-model:** https://github.com/p4lang/behavioral-model
 - 📖 **p4lang/PI:** https://github.com/p4lang/PI
